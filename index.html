@@ -4,10 +4,292 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/2f86e9d358.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <title>WMAD - reproduction</title>
   </head>
   <body>
-    <p>test</p>
+    <div class="container">
+      <div class="container__wrapper">
+        <div class="contents">
+          <section class="contents__sideMenu">
+            <div class="sideMenu__logo top">
+              <i class="devicon-twitter-original colored"></i>
+            </div>
+            <div class="sideMenu__MenuList">
+              <ul>
+                <li class="menu">
+                  <a href=""><ion-icon name="home-outline"></ion-icon>HOME</a>
+                </li>
+                <li class="menu">
+                  <a href=""
+                    ><ion-icon name="sparkles-outline"></ion-icon>Explore</a
+                  >
+                </li>
+                <li class="menu">
+                  <a href=""
+                    ><ion-icon name="notifications-outline"></ion-icon
+                    >Notifications</a
+                  >
+                </li>
+                <li class="menu">
+                  <a href=""
+                    ><ion-icon name="mail-outline"></ion-icon>Messages</a
+                  >
+                </li>
+                <li class="menu">
+                  <a href=""
+                    ><ion-icon name="bookmark-outline"></ion-icon>Bookmarks</a
+                  >
+                </li>
+                <li class="menu">
+                  <a href=""><ion-icon name="list-outline"></ion-icon>Lists</a>
+                </li>
+                <li class="menu">
+                  <a href=""
+                    ><ion-icon name="person-outline"></ion-icon>Profile</a
+                  >
+                </li>
+                <li class="menu">
+                  <a href=""
+                    ><ion-icon name="ellipsis-horizontal-outline"></ion-icon
+                    >More</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="sideMenu__tweetBtn">
+              <button class="tweetBtn">Tweet</button>
+            </div>
+            <div class="accountInfo inSideBar">
+              <div class="accountInfo__picture">
+                <img
+                  src="https://pbs.twimg.com/profile_images/1450283987251830792/As6i7-PL_x96.jpg"
+                  alt="profile-picture"
+                />
+              </div>
+              <div class="accountInfo__info">
+                <div class="accountInfo__name">
+                  <h5>KENTO🇨🇦2021/11/...</h5>
+                  <span>@KENTEA2111</span>
+                </div>
+                <div class="accountInfo__detailBtn">
+                  <ion-icon name="ellipsis-horizontal"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="contents__main">
+            <div class="main__tweet-field">
+              <div class="tweet-field__title top">
+                <h4>Home</h4>
+              </div>
+              <div class="tweet-field__text-field"></div>
+              <div class="tweet-field__buttons">
+                <ul class="logo-lists">
+                  <li>a</li>
+                  <li>a</li>
+                  <li>a</li>
+                  <li>a</li>
+                  <li>a</li>
+                  <li>a</li>
+                </ul>
+                <button class="tweetBtn">Tweet</button>
+              </div>
+            </div>
+            <div class="main__tweets">
+              <!-- all tweets are here. -->
+              <!-- tweet itself -->
+              <div class="tweets__tweet-component"></div>
+            </div>
+          </section>
+          <section class="contents__news-field">
+            <div class="news-field__search top">
+              <input
+                class="searchInput"
+                type="text"
+                placeholder="Search Twitter"
+              />
+            </div>
+            <div class="news-field__articles">
+              <h3>What's happening</h3>
+              <ul class="articles__articleList">
+                <li class="article__component">
+                  <div class="article__outline">
+                    <p class="article__subtitle">War in Ukraine - live -</p>
+                    <h5 class="article__headline">
+                      Ukrainian humanitarian corridors halted as evacuation
+                      routes deemed 'too dangerous'
+                    </h5>
+                  </div>
+                  <div class="article__image">
+                    <img
+                      src="https://pbs.twimg.com/semantic_core_img/1513826256847994884/a0zz3vzb?format=jpg&name=360x360"
+                      alt=""
+                    />
+                  </div>
+                </li>
+                <li class="article__component">
+                  <div class="article__outline">
+                    <p class="article__subtitle">US national news · live</p>
+                    <h5 class="article__headline">
+                      Brooklyn subway shooting suspect taken into custody,
+                      officials say
+                    </h5>
+                    <span class="article__subtext">
+                      Trending with
+                      <a href="" class="subtext__tag">Frank James</a>,
+                      <a href="" class="subtext__tag">Brooklyn</a>
+                    </span>
+                  </div>
+                  <div class="article__image">
+                    <img
+                      src="https://pbs.twimg.com/semantic_core_img/1514255010715996161/UCga8cuj?format=jpg&name=360x360"
+                      alt=""
+                    />
+                  </div>
+                </li>
+                <li class="article__component">
+                  <div class="article__outline">
+                    <p class="article__subtitle">Toronto Star · 5 hours ago</p>
+                    <h5 class="article__headline">
+                      Canada has 6 confirmed cases of XE. Here’s what we know
+                      about the hybrid COVID strain
+                    </h5>
+                    <span class="article__subtext">
+                      Trending with
+                      <a href="" class="subtext__tag">Frank James</a>,
+                      <a href="" class="subtext__tag">Brooklyn</a>
+                    </span>
+                  </div>
+                  <div class="article__image">
+                    <img
+                      src="https://pbs.twimg.com/media/FQPjmrxXoAAVFyF?format=jpg&name=240x240"
+                      alt=""
+                    />
+                  </div>
+                </li>
+                <li class="article__component">
+                  <div class="article__outline">
+                    <p class="article__subtitle">Elite Daily · 5 hours ago</p>
+                    <h5 class="article__headline">
+                      'The Ultimatum' Fans Are Losing It Over *That* Pregnancy
+                      Announcement
+                    </h5>
+                    <span class="article__subtext">
+                      Trending with
+                      <a href="" class="subtext__tag">Frank James</a>,
+                      <a href="" class="subtext__tag">Brooklyn</a>
+                    </span>
+                  </div>
+                  <div class="article__image">
+                    <img
+                      src="https://pbs.twimg.com/media/FQPl4vCXoAAi0sN?format=jpg&name=240x240"
+                      alt=""
+                    />
+                  </div>
+                </li>
+              </ul>
+              <div class="articles__trend">
+                <div class="trend__outline">
+                  <p class="trend__subtitle">Politics · Trending</p>
+                  <h5 class="trend__headline">Trudeau</h5>
+                  <span class="trend__amoutOfTweets">41.4K Tweets</span>
+                </div>
+                <div class="trend__detailIcon">
+                  <!-- icon is comming here -->
+                </div>
+              </div>
+              <div class="showMore">
+                <a href="">Show more</a>
+              </div>
+            </div>
+            <div class="news-field__whoToFollow">
+              <div class="whoToFollow__title">
+                <h4>Who to follow</h4>
+              </div>
+              <div class="whoToFollow__accountList">
+                <div class="accountInfo">
+                  <div class="accountInfo__picture">
+                    <img
+                      src="https://pbs.twimg.com/profile_images/1512423876822589442/RnL1lHKQ_x96.jpg"
+                      alt="profile-picture"
+                    />
+                  </div>
+                  <div class="accountInfo__info">
+                    <div class="accountInfo__name">
+                      <h5>Komei 🇨🇦 Vancouver</h5>
+                      <div class="accountInfo__detail">
+                        <span>@Komei_Can...</span>
+                        <span class="following">Follows you</span>
+                      </div>
+                    </div>
+                    <div class="accountInfo__detailBtn">
+                      <!-- <ion-icon name="ellipsis-horizontal"></ion-icon> -->
+                      <button class="followBtn">Follow</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="accountInfo">
+                  <div class="accountInfo__picture">
+                    <img
+                      src="https://pbs.twimg.com/profile_images/1489483137881022467/9Oqgq_v1_x96.jpg"
+                      alt="profile-picture"
+                    />
+                  </div>
+                  <div class="accountInfo__info">
+                    <div class="accountInfo__name">
+                      <h5>とと🇨🇦</h5>
+                      <div class="accountInfo__detail">
+                        <span>@togai121</span>
+                        <span class="following">Follows you</span>
+                      </div>
+                    </div>
+                    <div class="accountInfo__detailBtn">
+                      <!-- <ion-icon name="ellipsis-horizontal"></ion-icon> -->
+                      <button class="followBtn">Follow</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="showMore">
+                <a href="">Show more</a>
+              </div>
+            </div>
+            <div class="news-field__copyright">
+              <ul class="copyright__list">
+                <li>Terms of Service</li>
+                <li>Privacy Policy</li>
+                <li>Cookie Policy</li>
+                <li>Accessibility</li>
+                <li>Ads info</li>
+                <li>More...</li>
+              </ul>
+              <p>© 2022 Twitter, Inc.</p>
+            </div>
+          </section>
+          <!-- <div class="showMore">
+          <a href="">Show more</a>
+        </div> -->
+        </div>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
