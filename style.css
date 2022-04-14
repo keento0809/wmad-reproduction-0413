@@ -115,6 +115,9 @@ ul a {
 ion-icon {
   font-size: 24px;
   line-height: 80px;
+}
+
+ion-icon.sideMenu {
   padding-right: 1.5rem;
 }
 
@@ -122,6 +125,12 @@ ion-icon.test {
   font-size: 20px;
   line-height: 20px;
   padding-right: 0;
+}
+
+ion-icon.tweet-components__icon {
+  font-size: 18px;
+  line-height: 18px;
+  color: var(--news-field-textColor);
 }
 
 /* tweet Button */
@@ -217,6 +226,15 @@ ion-icon.test {
   line-height: 45px;
 }
 
+.accountInfo__detailBtn.tweet-component {
+  line-height: 0;
+}
+
+.accountInfo__detailBtn.tweet-component > ion-icon {
+  font-size: 15px;
+  line-height: 20px;
+}
+
 /* .following {
   font-size: 10px;
   line-height: 12px;
@@ -264,7 +282,7 @@ ion-icon.test {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin: 1rem 0;
+  margin: 1.3rem 0;
 }
 
 .article__subtitle {
@@ -443,13 +461,50 @@ ion-icon.earth {
 
 /* tweet component */
 .tweets__tweet-component {
-  padding: 0.8rem 0;
+  padding: 0.6rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.tweet-component__right {
+  flex-grow: 2;
+}
+
+.tweet-component__outline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tweet-component__username {
+  display: inline-block;
+  letter-spacing: var(--letter-spacing-small);
 }
 
 .tweet-component__subInfo {
   font-size: 13px;
   line-height: 20px;
   color: var(--news-field-textColor);
+}
+
+.tweet-component__tweetText {
+  padding: 0.2rem 0;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.tweet-component__iconsList {
+  padding-top: 0.6rem;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin-right: auto;
 }
 
 /* media query */
