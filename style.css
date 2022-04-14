@@ -1,12 +1,11 @@
 :root {
-  --test-bgColor-first: rgb(170, 255, 255);
-  --test-bgColor-second: rgb(136, 110, 161);
-  --test-bgColor-third: rgb(255, 241, 217);
   --news-field-bgColor: #eff3f4;
   --news-field-textColor: #536371;
   --news-field-articleHeadline-textColor: #0f141a;
   --news-field-letter-spacing: 0.1px;
+  --letter-spacing-small: -0.5px;
   --tweetBtn-bgColor: #1c9bef;
+  --tweetBtn-disabled-bgColor: #8ecdf8;
   --tweetBtn-bgColor-hover: #1886cf;
   --color-white: #fff;
   --sideBar-padding-left: 0.8rem;
@@ -57,7 +56,7 @@ ul a {
 }
 
 .container__wrapper {
-  padding: 0 80px;
+  padding: 0 100px;
 }
 
 .contents {
@@ -67,14 +66,16 @@ ul a {
 
 .contents__sideMenu {
   min-height: 100vh;
-  flex: 25%;
+  flex: 20%;
   background-color: var(--color-white);
 }
 
 .contents__main {
   min-height: 100vh;
-  flex: 45%;
-  background-color: var(--test-bgColor-second);
+  flex: 50%;
+  background-color: var(--color-white);
+  border-left: 1px solid var(--news-field-bgColor);
+  border-right: 1px solid var(--news-field-bgColor);
 }
 
 .contents__news-field {
@@ -90,6 +91,7 @@ ul a {
 }
 
 .top > h4 {
+  font-size: 19px;
   line-height: 45px;
 }
 
@@ -100,19 +102,26 @@ ul a {
 
 /* contents-sideMenu */
 .devicon-twitter-original {
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 22px;
+  line-height: 45px;
 }
 
 .menu > a {
-  font-size: 20px;
-  line-height: 60px;
+  font-size: 19px;
+  line-height: 55px;
+  letter-spacing: 0.01px;
 }
 
 ion-icon {
   font-size: 24px;
   line-height: 80px;
   padding-right: 1.5rem;
+}
+
+ion-icon.test {
+  font-size: 20px;
+  line-height: 20px;
+  padding-right: 0;
 }
 
 /* tweet Button */
@@ -125,6 +134,16 @@ ion-icon {
   border-radius: 50px;
   color: var(--color-white);
   transition: all 0.2s ease;
+}
+
+.tweetBtn.smallBtn {
+  font-weight: bold;
+  color: var(--color-white);
+  background-color: var(--tweetBtn-disabled-bgColor);
+  border-radius: 50px;
+  font-size: 13px;
+  line-height: 16px;
+  padding: 0.5rem 1rem;
 }
 
 .tweetBtn:hover {
@@ -150,13 +169,12 @@ ion-icon {
 }
 
 .accountInfo.inSideBar {
-  width: 90%;
   padding-top: 110px;
-  padding-left: var(--sideBar-padding-left);
+  /* padding-left: var(--sideBar-padding-left); */
 }
 
 .accountInfo__picture {
-  /* flex-grow: 1; */
+  line-height: 45px;
 }
 
 .accountInfo__picture img {
@@ -166,6 +184,12 @@ ion-icon {
   margin-right: 0.5rem;
 }
 
+.accountInfo__picture.tweet-field img {
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+}
+
 .accountInfo__info {
   flex-grow: 2;
   display: flex;
@@ -173,23 +197,32 @@ ion-icon {
   justify-content: space-between;
 }
 
+.accountInfo__detail > span,
 .accountInfo__name > h5,
 .accountInfo__name > span {
-  font-size: 15px;
-  line-height: 20px;
-  /* padding: 0.1rem 0; */
+  font-size: 13px;
+  line-height: 14px;
+  /* test */
+  letter-spacing: -0.5px;
+}
+
+.accountInfo__detail > span.following {
+  font-size: 10px;
+  line-height: 12px;
+  color: var(--news-field-textColor);
+  background-color: var(--following-bgColor);
 }
 
 .accountInfo__detailBtn {
   line-height: 45px;
 }
 
-.following {
+/* .following {
   font-size: 10px;
   line-height: 12px;
   color: var(--news-field-textColor);
   background-color: var(--following-bgColor);
-}
+} */
 
 /* searchInput */
 .searchInput {
@@ -220,7 +253,9 @@ ion-icon {
 }
 
 .news-field__articles > h3 {
-  letter-spacing: var(--news-field-letter-spacing);
+  /* original code */
+  /* letter-spacing: var(--news-field-letter-spacing); */
+  letter-spacing: var(--letter-spacing-small);
 }
 
 /* article */
@@ -243,7 +278,7 @@ ion-icon {
   color: var(--news-field-articleHeadline-textColor);
   font-size: 13px;
   font-weight: 900;
-  letter-spacing: var(--news-field-letter-spacing);
+  letter-spacing: var(--letter-spacing-small);
   padding: 0.2rem 0;
   line-height: 20px;
 }
@@ -336,4 +371,92 @@ ion-icon {
 
 .copyright__list li:hover {
   text-decoration: underline;
+}
+
+/*  ******  */
+/*  ******  */
+/*  ******  */
+/*  ******  */
+
+/* content__main */
+
+.main__wrapper {
+  padding: 0 1rem;
+  border-bottom: 1px solid var(--news-field-bgColor);
+}
+
+/* tweet-field__text-field */
+.tweet-field__text-field {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.text-field__title > h4 {
+  color: var(--news-field-textColor);
+  font-size: 20px;
+  line-height: 58px;
+  letter-spacing: -0.5px;
+  font-weight: normal;
+}
+
+ion-icon.earth {
+  font-size: 16px;
+  color: var(--tweetBtn-bgColor);
+  padding-right: 0.2rem;
+}
+
+.text-field__title {
+  border-bottom: 1px solid var(--news-field-bgColor);
+}
+
+.text-field__title > p {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 40px;
+  color: var(--tweetBtn-bgColor);
+}
+
+.text-field__right {
+  flex-grow: 2;
+}
+
+.tweet-field__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9rem 0;
+}
+
+.logo-lists {
+  margin: 0;
+}
+
+.logo-lists > li {
+  display: inline-block;
+  color: var(--tweetBtn-bgColor);
+  padding-right: 0.8rem;
+}
+
+/* tweet component */
+.tweets__tweet-component {
+  padding: 0.8rem 0;
+}
+
+.tweet-component__subInfo {
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--news-field-textColor);
+}
+
+/* media query */
+/* @media */
+
+@media screen and (min-width: 1439px) {
+  .container__wrapper {
+    /* padding: 0 320px; */
+  }
 }
