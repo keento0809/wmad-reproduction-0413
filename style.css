@@ -1,5 +1,5 @@
 :root {
-  --news-field-bgColor: #eff3f4;
+  --news-field-bgColor: #f6f9f9;
   --news-field-textColor: #536371;
   --news-field-articleHeadline-textColor: #0f141a;
   --news-field-letter-spacing: 0.1px;
@@ -56,10 +56,13 @@ ul a {
 }
 
 .container__wrapper {
-  padding: 0 100px;
+  /* test */
+  /* padding: 0 100px; */
 }
 
 .contents {
+  max-width: 1266px;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
 }
@@ -68,6 +71,10 @@ ul a {
   min-height: 100vh;
   flex: 20%;
   background-color: var(--color-white);
+}
+
+.sideMenu__wrapper {
+  padding-left: 1rem;
 }
 
 .contents__main {
@@ -79,6 +86,8 @@ ul a {
 }
 
 .contents__news-field {
+  max-width: 392px;
+  min-width: 392px;
   min-height: 100vh;
   flex: 30%;
   background-color: var(--color-white);
@@ -107,10 +116,19 @@ ul a {
 }
 
 .menu > a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
   font-size: 19px;
   line-height: 55px;
   letter-spacing: 0.01px;
 }
+
+/* .menuText {
+  line-height: 55px;
+    font-size: 19px;
+} */
 
 ion-icon {
   font-size: 24px;
@@ -173,7 +191,7 @@ ion-icon.tweet-components__icon {
   width: 100%;
   /* padding-left: var(--sideBar-padding-left); */
   line-height: 22px;
-  margin-bottom: 1rem;
+  margin-bottom: 0.3rem;
   /* margin: 0 auto; */
 }
 
@@ -255,6 +273,7 @@ ion-icon.tweet-components__icon {
 }
 
 .searchInput::placeholder {
+  font-size: 13px;
 }
 
 .news-field__search {
@@ -282,7 +301,8 @@ ion-icon.tweet-components__icon {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin: 1.3rem 0;
+  margin: 1.1rem 0;
+  cursor: pointer;
 }
 
 .article__subtitle {
@@ -298,7 +318,7 @@ ion-icon.tweet-components__icon {
   font-weight: 900;
   letter-spacing: var(--letter-spacing-small);
   padding: 0.2rem 0;
-  line-height: 20px;
+  line-height: 18px;
 }
 
 .article__image > img {
@@ -399,6 +419,9 @@ ion-icon.tweet-components__icon {
 /* content__main */
 
 .main__wrapper {
+  /* test */
+  min-width: 600px;
+  max-width: 600px;
   padding: 0 1rem;
   border-bottom: 1px solid var(--news-field-bgColor);
 }
@@ -508,10 +531,21 @@ ion-icon.earth {
 }
 
 /* media query */
-/* @media */
+@media screen and (max-width: 1265px) {
+  .contents {
+    max-width: 1070px;
+    margin: 0 auto;
+  }
+}
 
-@media screen and (min-width: 1439px) {
-  .container__wrapper {
-    /* padding: 0 320px; */
+@media screen and (min-width: 1266px) {
+  .contents {
+    max-width: 1266px;
+    margin: 0 auto;
+  }
+
+  .contents__sideMenu {
+    min-width: 272px;
+    max-width: 272px;
   }
 }
