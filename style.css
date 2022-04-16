@@ -77,6 +77,18 @@ ul a {
   padding-left: 1rem;
 }
 
+.sideMenu__logo {
+  padding-left: 0.5rem;
+}
+
+.sideMenu__menuList {
+  padding-left: 0.5rem;
+}
+
+.sideMenu__menuList > ul {
+  margin: 0.2rem 0;
+}
+
 .contents__main {
   min-height: 100vh;
   flex: 50%;
@@ -95,13 +107,13 @@ ul a {
 
 /* top */
 .top {
-  height: 45px;
-  line-height: 45px;
+  height: 50px;
+  line-height: 50px;
 }
 
 .top > h4 {
-  font-size: 19px;
-  line-height: 45px;
+  font-size: 18px;
+  line-height: 50px;
 }
 
 /*  ******  */
@@ -112,7 +124,7 @@ ul a {
 /* contents-sideMenu */
 .devicon-twitter-original {
   font-size: 22px;
-  line-height: 45px;
+  line-height: 50px;
 }
 
 .menu > a {
@@ -121,7 +133,7 @@ ul a {
   align-items: center;
   justify-content: flex-start;
   font-size: 19px;
-  line-height: 55px;
+  line-height: 57px;
   letter-spacing: 0.01px;
 }
 
@@ -131,12 +143,12 @@ ul a {
 } */
 
 ion-icon {
-  font-size: 24px;
+  font-size: 26px;
   line-height: 80px;
 }
 
 ion-icon.sideMenu {
-  padding-right: 1.5rem;
+  padding-right: 1.3rem;
 }
 
 ion-icon.test {
@@ -154,10 +166,10 @@ ion-icon.tweet-components__icon {
 /* tweet Button */
 .tweetBtn {
   background-color: var(--tweetBtn-bgColor);
-  font-size: 14px;
+  font-size: 15px;
   line-height: 20px;
   font-weight: bold;
-  padding: 14px 90px;
+  padding: 16px 90px;
   border-radius: 50px;
   color: var(--color-white);
   transition: all 0.2s ease;
@@ -196,7 +208,8 @@ ion-icon.tweet-components__icon {
 }
 
 .accountInfo.inSideBar {
-  padding-top: 110px;
+  padding-top: 130px;
+  padding-left: 0.5rem;
   /* padding-left: var(--sideBar-padding-left); */
 }
 
@@ -428,7 +441,7 @@ ion-icon.tweet-components__icon {
 
 /* tweet-field__text-field */
 .tweet-field__text-field {
-  padding-top: 1rem;
+  padding-top: 0.5rem;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
