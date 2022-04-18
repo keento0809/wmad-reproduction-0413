@@ -130,19 +130,27 @@
                     <span>@KENTEA2111</span>
                   </div>
                   <div class="accountInfo__detailBtn">
-                    <ion-icon name="ellipsis-horizontal"></ion-icon>
+                    <ion-icon
+                      name="ellipsis-horizontal"
+                      class="smaller"
+                    ></ion-icon>
                   </div>
                 </div>
               </div>
             </div>
           </section>
           <section class="contents__main">
+            <!-- test -->
+            <div class="tweet-field__title top sticky">
+              <h4>Home</h4>
+            </div>
             <!-- <div class="main__wrapper"> -->
             <div class="main__tweet-field">
               <div class="main__wrapper">
-                <div class="tweet-field__title top">
+                <!-- original code -->
+                <!-- <div class="tweet-field__title top sticky">
                   <h4>Home</h4>
-                </div>
+                </div> -->
                 <div class="tweet-field__text-field">
                   <div
                     class="accountInfo__picture tweet-field text-field__left"
@@ -155,11 +163,24 @@
                   <div class="text-field__right">
                     <div class="text-field__title">
                       <h4>What's happening?</h4>
-                      <p>
+                      <!-- original code -->
+                      <!-- <p>
                         <ion-icon name="earth" class="earth"></ion-icon>
-                        <!-- <ion-icon name="earth-outline" class="earth"></ion-icon -->
                         Everyone can reply
-                      </p>
+                      </p> -->
+                      <!-- test -->
+                      <div
+                        class="tweet-field__subText"
+                        style="
+                          display: flex;
+                          flex-direction: row;
+                          align-items: center;
+                          justify-content: flex-start;
+                        "
+                      >
+                        <ion-icon name="earth" class="earth"></ion-icon>
+                        <p style="color: #1c9bef">Everyone can reply</p>
+                      </div>
                     </div>
                     <div class="tweet-field__buttons">
                       <ul class="logo-lists">
@@ -200,7 +221,9 @@
                           ></ion-icon>
                         </li>
                       </ul>
-                      <button class="tweetBtn smallBtn">Tweet</button>
+                      <button class="tweetBtn smallBtn" disabled="true">
+                        Tweet
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -439,7 +462,7 @@
             <!-- </div> -->
           </section>
           <section class="contents__news-field">
-            <div class="news-field__search top">
+            <div class="news-field__search top sticky">
               <input
                 class="searchInput"
                 type="text"
