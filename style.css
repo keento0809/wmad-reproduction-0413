@@ -86,7 +86,8 @@ ul a {
 }
 
 .sideMenu__menuList > ul {
-  margin: 0.2rem 0;
+  margin-top: 0.2rem;
+  margin-bottom: 1.2rem;
 }
 
 .contents__main {
@@ -109,6 +110,18 @@ ul a {
 .top {
   height: 50px;
   line-height: 50px;
+}
+
+.top.tweet-field__title {
+  padding: 0 1rem;
+}
+
+.top.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #fff;
 }
 
 .top > h4 {
@@ -145,6 +158,11 @@ ul a {
 ion-icon {
   font-size: 26px;
   line-height: 80px;
+  cursor: pointer;
+}
+
+ion-icon.smaller {
+  font-size: 20px;
 }
 
 ion-icon.sideMenu {
@@ -459,7 +477,7 @@ ion-icon.tweet-components__icon {
 ion-icon.earth {
   font-size: 16px;
   color: var(--tweetBtn-bgColor);
-  padding-right: 0.2rem;
+  padding-right: 0.4rem;
 }
 
 .text-field__title {
@@ -467,6 +485,20 @@ ion-icon.earth {
 }
 
 .text-field__title > p {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 40px;
+  color: var(--tweetBtn-bgColor);
+}
+
+.tweet-field__subText {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.tweet-field__subText > p {
   font-weight: bold;
   font-size: 12px;
   line-height: 40px;
